@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motivation for You 💫</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #f9d423, #ff4e50);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+    #message {
+      font-size: 1.8rem;
+      max-width: 600px;
+      background: rgba(0,0,0,0.3);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <div id="message"></div>
+
+  <script>
+    // Your motivational messages
+    const messages = [
+      "You are stronger than you think.",
+      "Every day is a fresh start.",
+      "Keep going, you’re doing great!",
+      "Small steps lead to big changes.",
+      "Believe in yourself—you’ve got this!"
+    ];
+
+    // Pick a random one
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+    // Show it on the page
+    document.getElementById("message").innerText = randomMessage;
+  </script>
+</body>
+</html>
